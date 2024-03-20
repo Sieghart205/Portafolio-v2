@@ -1,0 +1,131 @@
+.hero{
+    width: 100%;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B6495;
+    color: #fff;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.image {
+    position: relative;
+    aspect-ratio: 1/1;
+    width: 40vh;
+}
+
+.image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.content .list h3{
+    font-size: 1.5em;
+    color: #60EBDE;
+    font-family: "inconsolata",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+
+.content .list ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+    gap: 50px;
+    overflow: hidden;
+    margin: 25px 0;
+}
+
+.content .list ul li{
+    animation: texto 10s linear infinite;
+    text-transform: uppercase;
+}
+
+@keyframes texto {
+    0% {
+        transform: translate(0,0);
+    } 
+    10% {
+        transform: translate(0,0);
+    }
+
+    20% {
+        transform: translate(0,-75px);
+    }
+    30% {
+        transform: translate(0,-75px);
+    }
+
+    40% {
+        transform: translate(0,-150px);
+    }
+    50% {
+        transform: translate(0,-150px);
+    }
+
+    60% {
+        transform: translate(0,-225px);
+    }
+    70% {
+        transform: translate(0,-225px);
+    }
+
+    80% {
+        transform: translate(0,-300px);
+    }
+    90% {
+        transform: translate(0,-300px);
+    }
+
+    100% {
+        transform: translate(0,0);
+    }
+}
+
+.redes{
+    width: 100%;
+    height: 845px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider{
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #325076;
+    overflow: hidden;
+    border-radius: 150px;
+}
+
+.slider img{
+    width: 0;
+    height: 400px;
+    flex-grow: 1;
+    object-fit: cover;
+    box-shadow: 0 0 .5rem #60EBDE;
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+
+.slider img:hover{
+    width: 200px;
+    background-color:#6390cb  ;
+    opacity: 1;
+    filter: saturate(150%);
+    cursor: crosshair;
+}
