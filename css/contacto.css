@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #23242a;
+    background-color: #0D151F;
 }
 .box{
     position: relative;
@@ -96,7 +96,7 @@ body{
 .box form{
     position: absolute;
     inset: 4px;
-    background-color: #222;
+    background-color: #1f2832;
     padding: 50px 40px;
     border-radius: 8px;
     z-index: 2;
