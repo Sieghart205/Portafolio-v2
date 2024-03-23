@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.app {
+    display: flex;
+    position: relative;
+}
+
+#barra-lateral {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-image: linear-gradient(90deg,rgba(255,255,255,0.2),transparent);
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+#barra-lateral ul {
+    margin: auto auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#barra-lateral ul li a {
+    text-decoration: none;
+    color: #60EBDE;
+}
+
+#barra-lateral ul li a:hover {
+    color: #fff;
+}
+
+#info{
+    margin-left: 400px;
+}
+
+.sect{
+    min-height: 100vh;
+    margin-top: 100px;
+}
