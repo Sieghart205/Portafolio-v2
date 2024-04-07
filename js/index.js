@@ -13,3 +13,9 @@ x.addEventListener("click", () => {
 pinterest.addEventListener("click", () => {
   window.open("https://co.pinterest.com/benitezortegajeisson/_created/");
 });
+
+const header = document.getElementById("header");
+
+window.addEventListener("scroll",(e)=>{
+  header.classList.toggle("abajo",window.scrollY > 0)
+})

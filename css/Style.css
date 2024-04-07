@@ -1,11 +1,21 @@
 .hero {
   width: 100%;
+  height: 100vh;
   padding: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #3b6495;
   color: #fff;
+}
+
+header{
+  background-color: #3b6495;
+  transition: .5s ease;
+}
+
+.abajo{
+  background-color: #7a60eb;
 }
 
 .content {
@@ -18,7 +28,7 @@
 .image {
   position: relative;
   aspect-ratio: 1/1;
-  width: 40vh;
+  width: 50vh;
 }
 
 .image img {
@@ -29,7 +39,7 @@
   border-radius: 100%;
 }
 
-.content .list h3 {
+.title {
   font-size: 1.5em;
   color: #60ebde;
   font-family: "inconsolata", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

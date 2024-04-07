@@ -12,11 +12,14 @@ body {
 
 header {
   display: flex;
+  position: fixed;
   justify-content: flex-end;
   align-items: center;
   height: 100px;
+  width: 100%;
   padding: 25px;
   background-color: #7a60eb;
+  z-index: 1000;
 }
 
 header nav {
