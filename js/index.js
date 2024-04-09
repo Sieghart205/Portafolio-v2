@@ -12,9 +12,9 @@ const width = imgProyecto.clientWidth;
 imgProyecto.addEventListener("mousemove", (e) => {
   const { layerX, layerY } = e;
 
-  const yRotation = ((layerX - height / 2) / height)*4;
+  const yRotation = ((layerX - height / 2) / height)*7;
 
-  const xRotation = ((layerY - width / 2) / width)*4;
+  const xRotation = ((layerY - width / 2) / width)*7;
 
   const string = `
     perspective(500px) 

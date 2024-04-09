@@ -79,22 +79,18 @@ header{
 
 .icons img {
   position: relative;
-  width: 250px;
+  width: 100px;
   border-radius: 25px;
   z-index: 25;
 }
 
 .tecno {
   position: relative;
-  width: 250px;
-  height: 250px;
+  width: 100px;
+  height: 100px;
   border-radius: 25px;
   overflow: hidden;
   cursor: crosshair;
-}
-
-.icon-img {
-  width: 100px;
 }
 
 .porcent {
