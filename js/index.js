@@ -1,21 +1,38 @@
-const Facebook = document.getElementById("facebook");
-const x = document.getElementById("x");
-const pinterest = document.getElementById("pinterest");
-
-Facebook.addEventListener("click", () => {
-  window.open("https://www.facebook.com/profile.php?id=100075133152053");
-});
-
-x.addEventListener("click", () => {
-  window.open("https://twitter.com/JeissonBenitez3");
-});
-
-pinterest.addEventListener("click", () => {
-  window.open("https://co.pinterest.com/benitezortegajeisson/_created/");
-});
-
 const header = document.getElementById("header");
 
 window.addEventListener("scroll",(e)=>{
   header.classList.toggle("abajo",window.scrollY > 0)
+})
+
+const imgProyecto = document.getElementById("img-proyecto");
+
+const height = imgProyecto.clientHeight;
+const width = imgProyecto.clientWidth;
+
+imgProyecto.addEventListener("mousemove", (e) => {
+  const { layerX, layerY } = e;
+
+  const yRotation = ((layerX - height / 2) / height)*4;
+
+  const xRotation = ((layerY - width / 2) / width)*4;
+
+  const string = `
+    perspective(500px) 
+    scale(1.1) 
+    rotateX(${xRotation}deg) 
+    rotateY(${yRotation}deg)
+  `;
+
+  imgProyecto.style.transform = string;
+});
+
+imgProyecto.addEventListener("mouseout",()=>{
+  const string = `
+    perspective(500px) 
+    scale(1) 
+    rotateX(0) 
+    rotateY(0)
+  `;
+
+  imgProyecto.style.transform = string;
 })
