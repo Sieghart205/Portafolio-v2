@@ -87,7 +87,6 @@ section {
 
 .slider img:hover {
   width: 400px;
-  cursor: crosshair;
   opacity: 1;
   margin-bottom: 100px;
 }

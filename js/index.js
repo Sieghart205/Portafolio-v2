@@ -36,3 +36,4 @@ imgProyecto.addEventListener("mouseout",()=>{
 
   imgProyecto.style.transform = string;
 })
+
